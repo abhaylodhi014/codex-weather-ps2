@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="icon" href="clear.png">
+    <link rel="stylesheet" href="weatherps2.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="searchbox">   
+            <input id="inputtext" type="text" placeholder="Enter your city">
+            <button id="search">Get Weather</button>
+        </div>
+          
+        <div class="error">
+
+             <div class="errortext">
+                <h2>Location not found !!</h2>
+            </div>
+
+            <div class="errorimg">
+                <img id="errorimage" src="error.png" alt="/">
+            </div>
+
+        </div>
+
+        <div class="hidden">
+            <div id="location">location</div>
+            <div class="image"><img id="weatherimage" src="rain.png" alt="ahbal"></div>
+
+        <div class="temperature">
+            <p id="temperature">48<sup>°</sup>C</p>
+            <div class="mausam">
+                <p id="mausam">lignt Rain</p>
+            </div>
+            
+        </div>
+        <div class="detail">
+            <div class="windspeed">
+                <i id="icon" class="fa-solid fa-wind"></i>
+                
+                    <span>wind speed</span>
+                    <span id="windspeedvalue">67kmp/h</span>
+               
+            </div>
+            <div class="humidity">
+                <i id="icon" class="fa-sharp fa-solid fa-droplet"></i>
+               
+                <span>Humidity</span>
+                <span id="humidityvalue">54%</span>
+              
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+    <script src="https://kit.fontawesome.com/3d3ab58989.js" crossorigin="anonymous"></script>
+    <script src="weatherps2.js"></script>
+</body>
+</html>
