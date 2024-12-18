@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded" , function(){
             const data = await response.json();
           
             
-            console.log(data);
+            hidden.style.display="flex";
 
              updateweather(data);
         }
         catch(error){
-            
+            hidden.style.display="none";
             errorcontainer.style.display="flex"; 
         }
         finally{
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded" , function(){
    
     function updateweather(data){
         hidden.style.display="flex";
+        errorcontainer.style.display="none";
         temp.innerHTML = Math.round(data.main.temp)+"°C";
         windspeed.innerHTML= data.wind.speed+"km/H";
         humidity.innerHTML = data.main.humidity+"%";
@@ -60,7 +61,8 @@ document.addEventListener("DOMContentLoaded" , function(){
         mausam.innerHTML = data.weather[0].description;
         
           if(data.cod === `404`){
-             errorcontainer.style.display="flex"; 
+             errorcontainer.style.display="flex";
+             hidden.style.display="none";
              return;
           }
         switch(data.weather[0].main){
