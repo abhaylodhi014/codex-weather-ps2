@@ -7,8 +7,9 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: rgb(63,94,251);
-background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(108,88,217,1) 0%, rgba(158,82,179,1) 46%, rgba(202,76,146,1) 88%, rgba(252,70,107,1) 100%);
+    background-color: black;
+/*     background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(108,88,217,1) 0%, rgba(158,82,179,1) 46%, rgba(202,76,146,1) 88%, rgba(252,70,107,1) 100%); */
 display: flex;
 justify-content: center;
 align-items: center;
