@@ -1,69 +1,35 @@
-Weather App
+# Weather App
 
-This Weather App provides real-time weather updates for any location.
-Users can search for a city to see details like temperature, wind speed, humidity, and current weather conditions.
-The app uses the OpenWeatherMap API to fetch weather data.
+A simple weather application that allows users to search for the current weather conditions of any city. It uses the OpenWeatherMap API to fetch weather data and displays it to the user with temperature, wind speed, humidity, and weather condition.
 
-Features
----> Search weather by city name
----> Displays temperature, wind speed, humidity, and weather description
----> Dynamically updates UI with weather details
----> Error handling for invalid locations
+## Live Demo
+Check out the live version of the app: [Weather App on GitHub Pages](https://abhaylodhi014.github.io/codex-weather-ps2/)
 
-Technologies Used
----> HTML
----> CSS
----> JavaScript (ES6+)
----> OpenWeatherMap API
+## Features
+- Search for weather by city name.
+- Displays current temperature, wind speed, humidity, and weather condition.
+- Dynamic weather images based on the weather condition (e.g., rain, snow, clouds).
+- Error handling for invalid city names.
+- Responsive UI for easy use.
 
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- OpenWeatherMap API
 
-Installation
----> Clone the repository or download the source code.
----> Replace the placeholder API_KEY in the JavaScript file with your OpenWeatherMap API key.
----> Open the index.html file in your browser to run the app.
+## How It Works
+1. The user inputs the name of a city in the input field and clicks the "Get Weather" button.
+2. The app fetches weather data from OpenWeatherMap API using the provided city name.
+3. The weather information (temperature, wind speed, humidity, description) is displayed on the page.
+4. Based on the weather condition (like clouds, snow, rain, etc.), an appropriate weather image is shown.
 
-Usage
----> Enter a city name in the input box.
----> Click the "Get Weather" button.
----> View weather details, including temperature, wind speed, humidity, and a weather icon.
----> If the location is not found, an error message will be displayed.
+## API Used
+- OpenWeatherMap API: [https://openweathermap.org/](https://openweathermap.org/)
 
-File Structure.
-├── index.html         # Main HTML file
-├── styles.css         # CSS file for styling
-├── app.js             # JavaScript file (contains the weather app logic)
-└── assets/            # Folder containing weather icons (e.g., Clouds.png, rain.png, etc.)
-
-
-API Integration
-This app uses the OpenWeatherMap API to fetch weather data. The endpoint used is:
-https://api.openweathermap.org/data/2.5/weather?q={city_name}&units=metric&appid={API_KEY}
-
-
-
-A sample response from the API:
-{
-    "weather": [
-        {
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
-        }
-    ],
-    "main": {
-        "temp": 25,
-        "humidity": 60
-    },
-    "wind": {
-        "speed": 5
-    },
-    "name": "New York"
-}
-
-Error Handling
----> If the city is not found, an error message is displayed.
----> If the input is empty, an alert prompts the user to enter a city name.
-
-Contributing
----> Feel free to fork the repository and submit pull requests to improve the app.
-
+## Setup and Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+![Screenshot 2025-01-27 143828](https://github.com/user-attachments/assets/9366ec17-2679-406c-8d5d-566457b719d6)
+![Screenshot 2025-01-27 143840](https://github.com/user-attachments/assets/f0a267ef-dbe9-4530-853e-893ee226d488)
